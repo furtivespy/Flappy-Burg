@@ -377,18 +377,18 @@ var Share = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'Just made ' + game.data.steps + ' steps on Clumsy Bird! Can you beat me? Try online here!';
-        var url = 'http://ellisonleao.github.io/clumsy-bird/';
+        var shareText = 'Just made ' + game.data.steps + ' forks on Flappy Burg! Can you beat me? Try online here!';
+        var url = 'https://ginadamico.wordpress.com/2015/01/06/the-hellhole-has-opened/';
         FB.ui(
             {
              method: 'feed',
-             name: 'My Clumsy Bird Score!',
+             name: 'My Flappy Burg Score!',
              caption: "Share to your friends",
              description: (
                     shareText
              ),
              link: url,
-             picture: 'http://ellisonleao.github.io/clumsy-bird/data/img/clumsy.png'
+             picture: 'http://furtivespy.github.io/clumsy-bird/data/img/clumsy.png'
             }
         );
         return false;
@@ -406,9 +406,9 @@ var Tweet = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'Just made ' + game.data.steps + ' steps on Clumsy Bird! Can you beat me? Try online here!';
-        var url = 'http://ellisonleao.github.io/clumsy-bird/';
-        var hashtags = 'clumsybird,melonjs'
+        var shareText = 'Just made ' + game.data.steps + ' forks on Flappy Burg! Can you beat me? Try online here!';
+        var url = 'https://ginadamico.wordpress.com/2015/01/06/the-hellhole-has-opened/';
+        var hashtags = 'flappyburg,hellhole,melonjs'
         window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
         return false;
     }
